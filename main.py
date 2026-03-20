@@ -374,4 +374,6 @@ async def main():
     return result
 
 
-result = await main()
+if __name__ == "__main__":
+    result = asyncio.run(main())
+    print(f"Pipeline Result: {result}")
